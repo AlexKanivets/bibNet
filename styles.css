@@ -379,136 +379,235 @@ body {
   text-decoration: underline;
 }
 
+/* Блок "Почему BIB NET?" - адаптация с EasyGoVPN */
 .why-bibnet {
-  padding: 80px 0 60px 0;
+  padding: 80px 0;
   background: #11224A;
 }
 
-.why-bibnet__container h2 {
+.why-bibnet__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.why-bibnet__header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+}
+
+.why-bibnet__header h2 {
   font-size: 3rem;
   font-weight: 700;
   color: #fff;
+  margin-bottom: 15px;
 }
 
-.why-bibnet__list {
+.why-bibnet__subtitle {
+  font-size: 1.2rem;
+  color: #B8C5E8;
+  margin: 0;
+}
+
+.why-bibnet__features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 32px;
+  gap: 40px;
   justify-content: center;
 }
 
-.why-bibnet__item {
+.why-bibnet__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px;
   background: #0A1A36;
   border-radius: 18px;
-  padding: 32px 24px;
-  text-align: center;
   transition: all 0.3s ease;
   border: 2px solid transparent;
 }
 
-.why-bibnet__item:hover {
+.why-bibnet__feature:hover {
   transform: translateY(-5px);
   border-color: #2EC4F1;
   box-shadow: 0 10px 30px rgba(46,196,241,0.2);
 }
 
 .why-bibnet__icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.why-bibnet__item h3 {
-  color: #2EC4F1;
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.why-bibnet__item p {
-  color: #fff;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-.how-to-start-vpn {
-  padding: 80px 0 60px 0;
-  background: #2EC4F1;
-  color: #0A1A36;
-}
-
-.how-to-start-vpn__container h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #0A1A36;
-}
-
-.vpn-steps {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 800px;
-  margin: 0 auto 40px;
-}
-
-.vpn-step {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  background: rgba(10, 26, 54, 0.1);
-  padding: 28px;
-  border-radius: 18px;
-  border: 2px solid rgba(10, 26, 54, 0.2);
-  transition: all 0.3s ease;
-}
-
-.vpn-step:hover {
-  background: rgba(10, 26, 54, 0.15);
-  transform: translateX(5px);
-}
-
-.vpn-step__number {
-  background: #0A1A36;
-  color: #2EC4F1;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-  flex-shrink: 0;
+  background: linear-gradient(135deg, #2EC4F1, #1A8FBF);
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
-.vpn-step__content h3 {
-  color: #0A1A36;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+.why-bibnet__icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+.why-bibnet__feature:hover .why-bibnet__icon {
+  transform: scale(1.1);
+}
+
+.why-bibnet__content h3 {
+  font-size: 1.5rem;
   font-weight: 600;
+  color: #fff;
+  margin: 0 0 10px 0;
 }
 
-.vpn-step__content p {
-  color: #0A1A36;
-  opacity: 0.8;
+.why-bibnet__content p {
+  font-size: 1rem;
+  color: #B8C5E8;
   line-height: 1.6;
   margin: 0;
 }
 
-.vpn-start-button {
-  text-align: center;
-  margin-top: 20px;
+/* Блок "Как начать использовать VPN?" - адаптация с EasyGoVPN */
+.how-to-start-vpn {
+  padding: 80px 0;
+  background: #0A1A36;
 }
 
+.how-to-start-vpn__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.how-to-start-vpn__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.how-to-start-vpn__header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.how-to-start-vpn__subtitle {
+  font-size: 1.2rem;
+  color: #B8C5E8;
+  margin: 0;
+}
+
+.how-to-start-vpn__steps {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.vpn-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 300px;
+}
+
+.vpn-step__highlight {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.vpn-step__line {
+  height: 2px;
+  flex-grow: 1;
+  background: #2EC4F1;
+  opacity: 0.3;
+}
+
+.vpn-step:first-child .vpn-step__line:first-child,
+.vpn-step:last-child .vpn-step__line:last-child {
+  opacity: 0;
+}
+
+.vpn-step__icon {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #2EC4F1, #1A8FBF);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 20px;
+  transition: all 0.3s ease;
+}
+
+.vpn-step__icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(46,196,241,0.3);
+}
+
+.vpn-step__icon i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.vpn-step__label {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  color: #2EC4F1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid #2EC4F1;
+}
+
+.vpn-step__content {
+  text-align: center;
+}
+
+.vpn-step__content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 15px 0;
+}
+
+.vpn-step__content p {
+  font-size: 1rem;
+  color: #B8C5E8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.vpn-step__content a {
+  color: #2EC4F1;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.vpn-step__content a:hover {
+  color: #fff;
+}
+
+/* Адаптивные стили для новых блоков */
 @media (max-width: 1200px) {
   .features__list {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   
-  .why-bibnet__list {
+  .why-bibnet__features {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
@@ -523,7 +622,7 @@ body {
     grid-template-columns: 1fr;
   }
   
-  .why-bibnet__list {
+  .why-bibnet__features {
     grid-template-columns: 1fr;
   }
   
@@ -535,6 +634,21 @@ body {
   .footer__links {
     flex-direction: column;
     gap: 15px;
+  }
+  
+  .how-to-start-vpn__steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .vpn-step__highlight {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vpn-step__line {
+    display: none;
   }
 }
 
@@ -549,8 +663,8 @@ body {
   
   .pricing__container h2,
   .features__container h2,
-  .why-bibnet__container h2,
-  .how-to-start-vpn__container h2,
+  .why-bibnet__header h2,
+  .how-to-start-vpn__header h2,
   .how-to-start__container h2,
   .faq__container h2 {
     font-size: 2.2rem;
@@ -564,8 +678,27 @@ body {
     grid-template-columns: 1fr;
   }
   
-  .why-bibnet__list {
-    grid-template-columns: 1fr;
+  .why-bibnet__features {
+    gap: 30px;
+  }
+  
+  .why-bibnet__feature {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+  
+  .why-bibnet__icon {
+    margin: 0 auto 20px auto;
+  }
+  
+  .vpn-step__icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .vpn-step__icon i {
+    font-size: 20px;
   }
   
   .feature,

@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BIB NET — VPN сервис</title>
+  <title>BIB NET - VPN сервис</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <main>
@@ -85,77 +86,101 @@
       </div>
     </section>
 
-    <section class="why-bibnet">
+    <!-- Блок "Почему BIB NET?" - адаптация с EasyGoVPN -->
+    <section class="why-bibnet" id="why-bibnet">
       <div class="container why-bibnet__container">
-        <h2>Почему BIB NET?</h2>
-        <p class="why-bibnet__subtitle">Стабильный, быстрый и безопасный VPN</p>
-        <div class="why-bibnet__list">
-          <div class="why-bibnet__item">
+        <div class="why-bibnet__header">
+          <h2>Почему BIB NET?</h2>
+          <p class="why-bibnet__subtitle">Стабильный, быстрый и безопасный VPN</p>
+        </div>
+        <div class="why-bibnet__features">
+          <div class="why-bibnet__feature">
             <div class="why-bibnet__icon">
               <svg aria-hidden="true" class="e-font-icon-svg e-fas-shield-alt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                 <path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"></path>
               </svg>
             </div>
-            <h3>Безопасность</h3>
-            <p>Все данные защищены, благодаря стойкому шифрованию</p>
+            <div class="why-bibnet__content">
+              <h3>Безопасность</h3>
+              <p>Все данные защищены, благодаря стойкому шифрованию</p>
+            </div>
           </div>
-          <div class="why-bibnet__item">
+          <div class="why-bibnet__feature">
             <div class="why-bibnet__icon">
               <svg aria-hidden="true" class="e-font-icon-svg e-fas-rocket" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                 <path d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z"></path>
               </svg>
             </div>
-            <h3>Скорость</h3>
-            <p>Пропускная способность наших серверов составляет до 10 Гб/сек</p>
+            <div class="why-bibnet__content">
+              <h3>Скорость</h3>
+              <p>Пропускная способность наших серверов составляет до 10 Гб/сек</p>
+            </div>
           </div>
-          <div class="why-bibnet__item">
+          <div class="why-bibnet__feature">
             <div class="why-bibnet__icon">
               <svg aria-hidden="true" class="e-font-icon-svg e-fas-infinity" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
                 <path d="M471.1 96C405 96 353.3 137.3 320 174.6 286.7 137.3 235 96 168.9 96 75.8 96 0 167.8 0 256s75.8 160 168.9 160c66.1 0 117.8-41.3 151.1-78.6 33.3 37.3 85 78.6 151.1 78.6 93.1 0 168.9-71.8 168.9-160S564.2 96 471.1 96zM168.9 320c-40.2 0-72.9-28.7-72.9-64s32.7-64 72.9-64c38.2 0 73.4 36.1 94 64-20.4 27.6-55.9 64-94 64zm302.2 0c-38.2 0-73.4-36.1-94-64 20.4-27.6 55.9-64 94-64 40.2 0 72.9 28.7 72.9 64s-32.7 64-72.9 64z"></path>
               </svg>
             </div>
-            <h3>Доступность</h3>
-            <p>Работает на всех устройствах: Android, iOS, Windows, MacOS и Linux</p>
+            <div class="why-bibnet__content">
+              <h3>Доступность</h3>
+              <p>Работает на всех устройствах: Android, iOS, Windows, MacOS и Linux</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="how-to-start-vpn">
+    <!-- Блок "Как начать использовать VPN?" - адаптация с EasyGoVPN -->
+    <section class="how-to-start-vpn" id="how-to-start-vpn">
       <div class="container how-to-start-vpn__container">
-        <h2>Как начать использовать VPN?</h2>
-        <div class="vpn-steps">
-          <div class="vpn-step">
-            <div class="vpn-step__number">1</div>
-            <div class="vpn-step__content">
-              <h3>Выберите тариф</h3>
-              <p>Определитесь с подходящим планом подписки в зависимости от ваших потребностей и бюджета.</p>
-            </div>
-          </div>
-          <div class="vpn-step">
-            <div class="vpn-step__number">2</div>
-            <div class="vpn-step__content">
-              <h3>Оплатите подписку</h3>
-              <p>Перейдите в наш Telegram-бот и оплатите выбранный тариф удобным для вас способом.</p>
-            </div>
-          </div>
-          <div class="vpn-step">
-            <div class="vpn-step__number">3</div>
-            <div class="vpn-step__content">
-              <h3>Получите данные</h3>
-              <p>После оплаты вы мгновенно получите конфигурационный файл и инструкции по подключению.</p>
-            </div>
-          </div>
-          <div class="vpn-step">
-            <div class="vpn-step__number">4</div>
-            <div class="vpn-step__content">
-              <h3>Подключитесь</h3>
-              <p>Установите приложение на ваше устройство и импортируйте полученную конфигурацию одним кликом.</p>
-            </div>
-          </div>
+        <div class="how-to-start-vpn__header">
+          <h2>Как начать использовать VPN?</h2>
+          <p class="how-to-start-vpn__subtitle">Простота установки в 3 коротких шага</p>
         </div>
-        <div class="vpn-start-button">
-          <a href="https://t.me/BibNetBot" class="btn btn-primary btn-animated">Начать сейчас</a>
+        <div class="how-to-start-vpn__steps">
+          <div class="vpn-step">
+            <div class="vpn-step__highlight">
+              <div class="vpn-step__line"></div>
+              <div class="vpn-step__icon">
+                <i class="fas fa-ruble-sign"></i>
+                <div class="vpn-step__label">1</div>
+              </div>
+              <div class="vpn-step__line"></div>
+            </div>
+            <div class="vpn-step__content">
+              <h3>Оформите подписку</h3>
+              <p>Выберите подходящий для вас <a href="#pricing">тариф</a></p>
+            </div>
+          </div>
+          <div class="vpn-step">
+            <div class="vpn-step__highlight">
+              <div class="vpn-step__line"></div>
+              <div class="vpn-step__icon">
+                <i class="fas fa-cloud-download-alt"></i>
+                <div class="vpn-step__label">2</div>
+              </div>
+              <div class="vpn-step__line"></div>
+            </div>
+            <div class="vpn-step__content">
+              <h3>Скачайте приложение</h3>
+              <p>Ссылки для скачивания в письме с заказом</p>
+            </div>
+          </div>
+          <div class="vpn-step">
+            <div class="vpn-step__highlight">
+              <div class="vpn-step__line"></div>
+              <div class="vpn-step__icon">
+                <i class="fas fa-key"></i>
+                <div class="vpn-step__label">3</div>
+              </div>
+              <div class="vpn-step__line"></div>
+            </div>
+            <div class="vpn-step__content">
+              <h3>Подключитесь к VPN</h3>
+              <p>Добавьте ключ доступа в приложении</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
