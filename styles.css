@@ -379,8 +379,136 @@ body {
   text-decoration: underline;
 }
 
+.why-bibnet {
+  padding: 80px 0 60px 0;
+  background: #11224A;
+}
+
+.why-bibnet__container h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.why-bibnet__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+  justify-content: center;
+}
+
+.why-bibnet__item {
+  background: #0A1A36;
+  border-radius: 18px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.why-bibnet__item:hover {
+  transform: translateY(-5px);
+  border-color: #2EC4F1;
+  box-shadow: 0 10px 30px rgba(46,196,241,0.2);
+}
+
+.why-bibnet__icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.why-bibnet__item h3 {
+  color: #2EC4F1;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.why-bibnet__item p {
+  color: #fff;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.how-to-start-vpn {
+  padding: 80px 0 60px 0;
+  background: #2EC4F1;
+  color: #0A1A36;
+}
+
+.how-to-start-vpn__container h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0A1A36;
+}
+
+.vpn-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.vpn-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  background: rgba(10, 26, 54, 0.1);
+  padding: 28px;
+  border-radius: 18px;
+  border: 2px solid rgba(10, 26, 54, 0.2);
+  transition: all 0.3s ease;
+}
+
+.vpn-step:hover {
+  background: rgba(10, 26, 54, 0.15);
+  transform: translateX(5px);
+}
+
+.vpn-step__number {
+  background: #0A1A36;
+  color: #2EC4F1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.vpn-step__content h3 {
+  color: #0A1A36;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.vpn-step__content p {
+  color: #0A1A36;
+  opacity: 0.8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.vpn-start-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
 @media (max-width: 1200px) {
   .features__list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .why-bibnet__list {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
@@ -392,6 +520,10 @@ body {
   }
   
   .features__list {
+    grid-template-columns: 1fr;
+  }
+  
+  .why-bibnet__list {
     grid-template-columns: 1fr;
   }
   
@@ -417,6 +549,8 @@ body {
   
   .pricing__container h2,
   .features__container h2,
+  .why-bibnet__container h2,
+  .how-to-start-vpn__container h2,
   .how-to-start__container h2,
   .faq__container h2 {
     font-size: 2.2rem;
@@ -430,11 +564,26 @@ body {
     grid-template-columns: 1fr;
   }
   
-  .feature {
+  .why-bibnet__list {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature,
+  .why-bibnet__item {
     padding: 25px 20px;
   }
   
   .faq__item {
     padding: 20px 25px;
+  }
+  
+  .vpn-step {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .vpn-step__number {
+    align-self: center;
   }
 }
